@@ -1,0 +1,15 @@
+[33mcommit 415a19802c33e67147c2af1df6de447e281caba6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Desenvolvedor <hcs011@hotmail.com>
+Date:   Tue Aug 22 13:31:43 2017 -0300
+
+    second commit
+
+[1mdiff --git a/README.md b/README.md[m
+[1mindex e22602d..ec3a02a 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -25,3 +25,4 @@[m [m$ ionic cordova run ios[m
+ Substitute ios for android if not on a Mac.[m
+ [m
+ "# ionic-3-para-iniciantes" [m
+[32m+[m[32m"# ionic-3-para-iniciantes"[m[41m [m

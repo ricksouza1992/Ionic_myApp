@@ -19,8 +19,8 @@ export class IntroPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad IntroPage');
+  ionViewDidLoad() { 
+    //console.log('ionViewDidLoad IntroPage');
   }
 
   public goToTabsPage(): void {

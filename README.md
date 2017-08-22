@@ -26,3 +26,4 @@ Substitute ios for android if not on a Mac.
 
 "# ionic-3-para-iniciantes" 
 "# ionic-3-para-iniciantes" 
+"# Ionic_myApp" 
