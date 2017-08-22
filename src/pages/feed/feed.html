@@ -10,41 +10,34 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <div>
-    <h2>Nome do usuário: {{nome_usuario}}</h2>
-  </div>
-
-  <ion-card>
+<ion-content >
+  <ion-card *ngFor="let filme of lista_filmes">
     <ion-item>
       <ion-avatar item-start>
         <img src="assets/images/avatar.png">
       </ion-avatar>
-      <h2 class="feed_title">Henrique C. de Souza</h2>
-      <p class="feed_date">Agosto 22, 2017</p>
+      <h2 class="feed_title">{{ filme.original_title }}</h2>
+      <p class="feed_date">{{ filme.release_date }}</p>
     </ion-item>
-    <img src="assets/images/feed_image.jpg">
+    <img [src]="'https://image.tmdb.org/t/p/w300/' + filme.backdrop_path">
     <ion-card-content>
-      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-        Whoa. This is heavy.</p>
+      <p>{{ filme.overview }}</p>
     </ion-card-content>
     <ion-row>
       <ion-col>
         <button ion-button icon-left clear small>
             <ion-icon name="thumbs-up"></ion-icon>
-            <div>12 Likes</div>
+            <div>{{ objeto_feed.qntd_likes }}</div>
           </button>
       </ion-col>
       <ion-col>
         <button ion-button icon-left clear small>
             <ion-icon name="text"></ion-icon>
-            <div>4 Comments</div>
+            <div>{{ objeto_feed.qntd_comments }}</div>
           </button>
       </ion-col>
       <ion-col center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
+        <ion-note>{{ objeto_feed.time_comments }}</ion-note>
       </ion-col>
     </ion-row>
   </ion-card>
